@@ -1,9 +1,10 @@
 function downloadAsZip() {
     var zip = new JSZip();
     const files = [
-        { url: "https://f70fc4d7-9498-4069-a990-597d5249c30e-00-1a1gamytbovqb.riker.replit.dev/index.html", path: "index.html" },
-        { url: "https://f70fc4d7-9498-4069-a990-597d5249c30e-00-1a1gamytbovqb.riker.replit.dev/style.css", path: "style.css" },
-        { url: "https://f70fc4d7-9498-4069-a990-597d5249c30e-00-1a1gamytbovqb.riker.replit.dev/app.js", path: "app.js" }
+        { url: "/index.html", path: "index.html" },
+        { url: "/assets/styles/style.css", path: "assets/styles/style.css" },
+        { url: "/assets/scripts/app.js", path: "assets/scripts/app.js" },
+        { url: "/assets/scripts/centralize.js", path: "assets/scripts/centralize.js" }
     ];
 
     Promise.all(files.map(file => 
